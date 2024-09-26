@@ -50,6 +50,29 @@ public class Reverse1 {
         return new StringBuilder(name).reverse().toString();
     }
 
+    public static boolean palindrome(int num){
+        int original = num;
+        int reversed = 0;
+        while (num != 0){
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+        return (original == reversed);
+    }
+
+    public static void palindromeString(String name1){
+            StringBuilder sb = new StringBuilder(name1).reverse();
+            String reversed = sb.toString();
+
+            if(name1.equals(reversed)){
+                System.out.println("Palindrom");
+            }else {
+                System.out.println("Not Palindrom");
+            }
+
+    }
+
 
     public static void main(String[] args){
         System.out.println(reverseNumber(2027));
@@ -64,5 +87,12 @@ public class Reverse1 {
         System.out.println(reverseString(name));
 
         System.out.println(reverseStringBuilder(name));
+
+        System.out.println(palindrome(2002));
+
+        String name1 = "madam";
+        palindromeString(name1);
+
+
     }
 }
