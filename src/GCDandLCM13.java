@@ -1,3 +1,4 @@
+//(a,b)  temp
 public class GCDandLCM13 {
 
     public static void GCDORLCM(int a,int b) {
@@ -5,7 +6,7 @@ public class GCDandLCM13 {
         int b1 = b;
         while (b1 !=0){
             int temp = b1;
-            b1=a1%b;
+            b1 = a1 % b1;
             a1=temp;
         }
         System.out.println(a1);
