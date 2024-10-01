@@ -6,7 +6,7 @@ public class leftrotate {
         int n = arr.length;
         k = k % n;
 
-        rotate(arr,k,n-1);
+        rotate(arr,0,k-1);
 
         rotate(arr,k,n-1);
         rotate(arr,0,n-1);
@@ -28,7 +28,7 @@ public class leftrotate {
     }
     public static void main(String[] args) {
         int[] arr = {1,2,3,4};
-        leftRotateArray(arr,3);
+        leftRotateArray(arr,3);    //{2,1,4,3}  {3,2,1,4} {4,1,2,3}
     }
 }
 
