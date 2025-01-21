@@ -26,6 +26,6 @@ public class Rightrotate {
     }
     public static void main(String[] args) {
         int[] arr = {1,2,3,4};
-        rightRotateArray(arr,3);
+        rightRotateArray(arr,3);    //k represents the number of positions by which the elements in the array should be right-rotated.
     }
 }
